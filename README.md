@@ -11,6 +11,7 @@ Please make sure you are running as `root`!
 Default:
 * Git
 * PHP 7.4
+* MySQL
 * Nginx
 * Composer
 * Nodejs
