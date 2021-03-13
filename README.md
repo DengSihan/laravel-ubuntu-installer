@@ -9,14 +9,15 @@ Please make sure you are running as `root`!
 
 ## Features
 Default:
-	* Git
-	* PHP 7.4
-	* Nginx
-	* Composer
-	* Nodejs
-	* Redis
+* Git
+* PHP 7.4
+* Nginx
+* Composer
+* Nodejs
+* Redis
+
 Optional:
-	* Elasticsearch 7
+* Elasticsearch 7
 
 ## Useage
 ```sh
