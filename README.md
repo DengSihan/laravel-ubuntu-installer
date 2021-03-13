@@ -1,9 +1,9 @@
-# Lravel-Ubuntu-Installer
+# Laravel-Ubuntu-Installer
 
 Great thanks to [summerblue/laravel-ubuntu-init](https://github.com/summerblue/laravel-ubuntu-init), this script is based on it.
 
 ## Introduction
-This script is for installing a [**Laravel**](https://laravel.com) environment on `Ubuntu 20.04`/`Ubuntu 18.04`.
+This script is for installing a [**Laravel**](https://laravel.com) environment on `Ubuntu 20.04`/`Ubuntu 18.04`/`Ubuntu 16.04`.
 
 Please make sure you are running as `root`!
 
