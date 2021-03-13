@@ -34,15 +34,11 @@ cd ~/laravel-ubuntu-installer
 ```sh
 ./20.04/nginx_add_site.sh
 ```
-2. Add A New Site For Nuxt
-```sh
-./20.04/nginx_add_site.sh nuxt
-```
-3. Add A New MySQL user & database
+2. Add A New MySQL user & database
 ```sh
 ./20.04/mysql_add_user.add
 ```
-4. Run script as `www-data`
+3. Run script as `www-data`
 ```sh
 sudowww 'php artisan config:cache'
 ```
