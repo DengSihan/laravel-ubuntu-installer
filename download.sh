@@ -7,7 +7,7 @@ nc="\e[0m"
 
 echo -e "${green}===> downloading...${nc}"
 cd $HOME
-wget -q https://github.com/dengsihan/laravel-ubuntu-installer/archive/master.tar.gz -O laravel-ubuntu-installer.tar.gz
+wget -q https://codeload.github.com/DengSihan/laravel-ubuntu-installer/legacy.tar.gz/main -O laravel-ubuntu-installer.tar.gz
 rm -rf laravel-ubuntu-installer
 tar zxf laravel-ubuntu-installer.tar.gz
 mv laravel-ubuntu-installer-master laravel-ubuntu-installer
