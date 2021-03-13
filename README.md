@@ -1,5 +1,7 @@
 # Laravel-Ubuntu-Installer
 
+![install-laravel-on-ubuntu](https://raw.githubusercontent.com/dengsihan/laravel-ubuntu-installer/main/logo.png)
+
 Great thanks to [summerblue/laravel-ubuntu-init](https://github.com/summerblue/laravel-ubuntu-init), this script is based on it.
 
 ## Introduction
@@ -22,7 +24,7 @@ Optional:
 
 ## Useage
 ```sh
-wget -qO- https://raw.githubusercontent.com/dengsihan/laravel-ubuntu-installer/master/download.sh - | bash
+wget -qO- https://raw.githubusercontent.com/dengsihan/laravel-ubuntu-installer/main/download.sh - | bash
 ```
 install elasticsearch:
 ```sh
