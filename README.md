@@ -39,7 +39,7 @@ cd ~/laravel-ubuntu-installer
 ```
 2. Add A New MySQL user & database
 ```sh
-./20.04/mysql_add_user.add
+./20.04/mysql_add_user.sh
 ```
 3. Run script as `www-data`
 ```sh
