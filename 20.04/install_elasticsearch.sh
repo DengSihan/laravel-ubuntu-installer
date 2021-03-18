@@ -6,11 +6,11 @@ source ${CURRENT_DIR}/../common/common.sh
 [ $(id -u) != "0" ] && { ansi -n --bold --bg-red "Please execute this script as ROOT user!"; exit 1; }
 
 # set JAVA_HOME
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/lib/jvm/java-8-openjdk-amd64/db/bin:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin"
-export J2SDKDIR="/usr/lib/jvm/java-8-openjdk-amd64"
-export J2REDIR="/usr/lib/jvm/java-8-openjdk-amd64/jre*"
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
-export DERBY_HOME="/usr/lib/jvm/java-8-openjdk-amd64/db"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-11-openjdk-amd64/bin:/usr/lib/jvm/java-11-openjdk-amd64/db/bin:/usr/lib/jvm/java-11-openjdk-amd64/jre/bin"
+export J2SDKDIR="/usr/lib/jvm/java-11-openjdk-amd64"
+export J2REDIR="/usr/lib/jvm/java-11-openjdk-amd64/jre*"
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+export DERBY_HOME="/usr/lib/jvm/java-11-openjdk-amd64/db"
 
 function install_java {
     sudo apt-get update
