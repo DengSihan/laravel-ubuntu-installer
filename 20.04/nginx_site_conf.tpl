@@ -48,7 +48,7 @@ server {
         deny all;
     }
 
-    listen 80; # 443 ssl;
+    listen 80; # 443 ssl http2;
     # ssl_certificate {{project_dir}}/fullchain.pem;
     # ssl_certificate_key {{project_dir}}/privkey.pem;
     # ssl_protocols TLSv1.3;
