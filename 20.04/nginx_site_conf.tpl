@@ -51,6 +51,7 @@ server {
     listen 80; # 443 ssl;
     # ssl_certificate {{project_dir}}/fullchain.pem;
     # ssl_certificate_key {{project_dir}}/privkey.pem;
+    # ssl_protocols TLSv1.3;
 }
 #server {
 #    listen 80;
