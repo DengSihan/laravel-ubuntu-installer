@@ -28,6 +28,9 @@ server {
 
     client_max_body_size 100m;
 
+    server_tokens off;
+    more_clear_headers Server;
+
     location ~ \.php$ {
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
         fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
