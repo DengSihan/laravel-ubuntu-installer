@@ -26,6 +26,10 @@ Optional:
 ```sh
 wget -qO- https://raw.githubusercontent.com/dengsihan/laravel-ubuntu-installer/main/download.sh - | bash
 ```
+if you want to use `php7.3`, please run
+```sh
+wget -qO- https://raw.githubusercontent.com/dengsihan/laravel-ubuntu-installer/php7.3/download.sh - | bash
+```
 install elasticsearch:
 ```sh
 cd ~/laravel-ubuntu-installer
