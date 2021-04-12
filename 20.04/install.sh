@@ -37,7 +37,7 @@ function install_node_npm {
 function install_php {
     sudo add-apt-repository -y ppa:ondrej/php
     apt-get update
-    apt-get install -y php7.4-bcmath php7.4-cli php7.4-curl php7.4-fpm php7.4-gd php7.4-mbstring php7.4-mysql php7.4-opcache php7.4-pgsql php7.4-readline php7.4-xml php7.4-zip php7.4-sqlite3 php7.4-redis
+    apt-get install -y php7.3-bcmath php7.3-cli php7.3-curl php7.3-fpm php7.3-gd php7.3-mbstring php7.3-mysql php7.3-opcache php7.3-pgsql php7.3-readline php7.3-xml php7.3-zip php7.3-sqlite3 php7.3-redis
 }
 
 function install_others {
@@ -57,7 +57,7 @@ function install_composer {
 
 function install_plugins {
     npm install pm2@latest -g
-    sudo apt-get install -y php7.4-gmp
+    sudo apt-get install -y php7.3-gmp
     sudo apt-get install -y dos2unix
 }
 
@@ -67,7 +67,7 @@ call_function install_php "Installing PHP" ${LOG_PATH}
 call_function install_node_npm "Installing Nodejs / npm" ${LOG_PATH}
 call_function install_others "Installing Mysql / Nginx / Redis" ${LOG_PATH}
 call_function install_composer "Installing Composer" ${LOG_PATH}
-call_function install_plugins "Installing pm2 / php7.4-gmp / dos2unix" ${LOG_PATH}
+call_function install_plugins "Installing pm2 / php7.3-gmp / dos2unix" ${LOG_PATH}
 
 ansi --green --bold -n "Installed Successfully"
 ansi --green --bold "Mysql root password："; ansi -n --bold --bg-yellow --black ${MYSQL_ROOT_PASSWORD}

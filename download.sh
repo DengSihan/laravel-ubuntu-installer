@@ -7,10 +7,10 @@ nc="\e[0m"
 
 echo -e "${green}===> downloading...${nc}"
 cd $HOME
-wget -q https://github.com/dengsihan/laravel-ubuntu-installer/archive/main.tar.gz -O laravel-ubuntu-installer.tar.gz
+wget -q https://github.com/dengsihan/laravel-ubuntu-installer/archive/php7.3.tar.gz -O laravel-ubuntu-installer.tar.gz
 rm -rf laravel-ubuntu-installer
 tar zxf laravel-ubuntu-installer.tar.gz
-mv laravel-ubuntu-installer-main laravel-ubuntu-installer
+mv laravel-ubuntu-installer-php7.3 laravel-ubuntu-installer
 rm -f laravel-ubuntu-installer.tar.gz
 echo -e "${green}===> downloaded${nc}"
 echo ""
