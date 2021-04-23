@@ -12,6 +12,8 @@ server {
     # }
     # location / {
     #     proxy_pass http://127.0.0.1:3001;
+    #     add_header X-Frame-Options SAMEORIGIN;
+    #     # add_header Onion-Location https://$host$request_uri;
     # }
     
     location / {
