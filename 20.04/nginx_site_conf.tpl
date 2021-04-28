@@ -57,6 +57,9 @@ server {
     # ssl_certificate {{project_dir}}/fullchain.pem;
     # ssl_certificate_key {{project_dir}}/privkey.pem;
     # ssl_protocols TLSv1.2 TLSv1.3;
+
+    # HSTS
+    # add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
 }
 #server {
 #    listen 80;
