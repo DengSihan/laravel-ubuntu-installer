@@ -30,8 +30,14 @@ function install_basic_softwares {
 }
 
 function install_node_npm {
-    curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
-    sudo apt-get install -y nodejs
+    # curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+    # sudo apt-get install -y nodejs
+    
+    # https://github.com/nvm-sh/nvm
+    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+    export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    nvm install 12.10.0
 }
 
 function install_php {
@@ -47,12 +53,6 @@ function install_others {
     apt-get install -y nginx nginx-extras mysql-server redis-server
     chown -R ${WWW_USER}.${WWW_USER_GROUP} /var/www/
     systemctl enable nginx.service
-    
-    # https://github.com/nvm-sh/nvm
-    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-    export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-    nvm install 12.10.0
 }
 
 function install_composer {
