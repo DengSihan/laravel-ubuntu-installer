@@ -16,8 +16,9 @@ Default:
 * MySQL
 * Nginx
 * Composer
-* Nodejs
+* Nodejs (v12.10.0 as default)
 * Redis
+* nvm
 
 Optional:
 * Elasticsearch 7
