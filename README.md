@@ -16,7 +16,7 @@ Default:
 * MySQL
 * Nginx
 * Composer
-* Nodejs (v12.10.0 as default)
+* Nodejs (v12.13.0 as default)
 * Redis
 * nvm
 
