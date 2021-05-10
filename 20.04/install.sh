@@ -38,6 +38,8 @@ function install_node_npm {
     export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
     nvm install 12.13.0
+    sudo ln -s /root/.nvm/versions/node/v12.13.0/bin/node /usr/bin/node
+    sudo ln -s /root/.nvm/versions/node/v12.13.0/bin/npm /usr/bin/npm
 }
 
 function install_php {
@@ -63,6 +65,7 @@ function install_composer {
 
 function install_plugins {
     npm install pm2@latest -g
+    sudo ln -s /root/.nvm/versions/node/v12.13.0/bin/pm2 /usr/bin/pm2
     sudo apt-get install -y php7.4-gmp
     sudo apt-get install -y dos2unix
 }
