@@ -7,7 +7,7 @@ server {
     charset utf-8;
 
     # proxy_set_header X-Forwarded-For $remote_addr;
-    # location ~* ^/(api|broadcasting|uploads)/ {
+    # location ~* ^/(api|broadcasting|storage)/ {
     #     try_files $uri $uri/ /index.php?$query_string;
     # }
     # location / {
