@@ -12,7 +12,7 @@ Please make sure you are running as `root`!
 ## Features
 Default:
 * Git
-* PHP 7.4
+* PHP 8.0
 * MySQL
 * Nginx
 * Composer
