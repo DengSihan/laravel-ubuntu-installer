@@ -8,7 +8,7 @@ source ${CURRENT_DIR}/../common/library.sh
 
 [ $(id -u) != "0" ] && { ansi -n --bold --bg-red "Please execute this script as ROOT user!"; exit 1; }
 
-call_function 'initing system:' init_system
+call_function 'initing system' init_system
 
 random_root_password=`random_string`
 
