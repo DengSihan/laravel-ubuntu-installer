@@ -18,7 +18,7 @@ Please make sure you are running as `root`!
 
 You can choose stuffs you need to install instead of install all of them.
 
-![install-laravel-on-ubuntu](https://raw.githubusercontent.com/dengsihan/laravel-ubuntu-installer/main/main.gif)
+![install-laravel-on-ubuntu](https://raw.githubusercontent.com/dengsihan/laravel-ubuntu-installer/main/example.gif)
 
 Also, you can install any version of node / php by inputting the version of them.
 
