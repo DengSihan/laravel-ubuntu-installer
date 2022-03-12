@@ -8,19 +8,11 @@ export WWW_USER="www-data"
 export WWW_USER_GROUP="www-data"
 
 function call_function {
-    func=$1
-    desc=$2
-    log_file=$3
+    local desc
+    desc=$1; shift || return
     echo -n "===> ${desc}..."
-    $func >> ${log_file} 2>&1
-    ret=$?
-    echo -n '    ['
-    if [[ $ret -eq 0 ]]; then
-        ansi --bold --green "DONE"
-    else
-        ansi --bold --red "ERROR"
-    fi
-    echo ']'
+    printf "\n"
+    "$@"
 }
 
 random_string(){
