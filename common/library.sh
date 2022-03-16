@@ -30,7 +30,7 @@ function init_system {
     locale-gen en_US.UTF-8
 
     apt-get update
-    apt-get install -y software-properties-common
+    apt-get install -y software-properties-common acl
 
     init_alias
 }

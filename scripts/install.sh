@@ -95,13 +95,13 @@ ansi -n --bg-black --green-intense --italic "$stuffs had been installed!"
 if echo $stuffs | grep "mysql" > /dev/null; then
 	printf "\n\n"
 	ansi --bold --bg-black --green-intense -n "add mysql user: "
-	ansi --bg-black --green-intense --italic --underline -n "${HOME}/installer/scripts/add_mysql_user.sh"
+	ansi --bg-black --green-intense --italic --underline -n "${HOME}/laravel-ubuntu-installer/scripts/mysql_add_user.sh"
 fi
 
 if echo $stuffs | grep "nginx" > /dev/null; then
 	printf "\n\n"
 	ansi --bold --bg-black --green-intense -n "add nginx site: "
-	ansi --bg-black --green-intense --italic --underline -n "${HOME}/installer/scripts/nginx_add_site.sh"
+	ansi --bg-black --green-intense --italic --underline -n "${HOME}/laravel-ubuntu-installer/scripts/nginx_add_site.sh"
 fi
 
 printf "\n\n"
