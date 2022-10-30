@@ -12,10 +12,10 @@ ansi --bold -n "Please input the php version which you want to install"
 ansi --italic --faint "example: "
 ansi --italic --faint --underline "7.4"
 printf "\t"
-ansi --italic --faint --underline -n "8.0"
-ansi --italic --faint -n "(default 8.0)"
+ansi --italic --faint --underline -n "8.1"
+ansi --italic --faint -n "(default 8.1)"
 read -p "" php_version
-php_version=${php_version:-8.0}
+php_version=${php_version:-8.1}
 
 call_function "installing: php $php_version" install_php $php_version
 
